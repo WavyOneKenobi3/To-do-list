@@ -5,3 +5,12 @@ class TaskMaker:
     self.priorities = priorities 
     self.due_date = due.date
     self.completion_status = completion_status
+
+
+
+
+
+  def status(self):
+    self.completion_status = True
+    
+    
