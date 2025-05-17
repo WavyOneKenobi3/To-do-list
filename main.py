@@ -5,22 +5,6 @@
 print("To-Do List\n")
 print("Welcome to Your To-Do list app. ")
 
- 
- #Add item to list (in array)
-def add_list():
-    task = input("Add Task\n ").lower()
-    Date_Task = input("Add Date\n ")
-    To_Do_List.update({task: Date_Task})    
-    
- #delete item off list (in array)
-def delete_list():                                          
-    task = input("Delete Task: ").lower()
-    if task in To_Do_List:                               
-        del To_Do_List[task]
-        print("Task removed.")
-    else:
-        print("Task not found in the list.")
-
 
 def main():
  
