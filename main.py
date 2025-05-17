@@ -1,7 +1,6 @@
 # title of project (To-Do list)
 
-#array for the the to-do list 
-To_Do_List = {}
+
 
 print("To-Do List\n")
 print("Welcome to Your To-Do list app. ")
@@ -23,17 +22,24 @@ def delete_list():
         print("Task not found in the list.")
 
 
-def play():  
+def main():
+ 
     while True:
-        print("Select an option")
-        user_input = input("1. Add Task \n2. Delete Task\n3. Show List\n4. Quit\n").strip() 
-        if user_input == "1":
+        #display a menu for user
+        print("To-Do List")
+        print("1. Add Task ")
+        print("2. Delete Task")
+        print("3. Show List")
+        print("4. Quit")
+        choices = input("Choose an option 1-4")
+     
+        if choices == "1":
             add_list()
-        elif user_input == "2":
+        elif choices == "2":
             delete_list()
-        elif user_input == "3":
+        elif choices == "3":
             print(To_Do_List)
-        elif user_input == "4":
+        elif choices == "4":
             print("Ending Program")
             break
         else:
@@ -43,12 +49,13 @@ def play():
 
 
 
-play()
 
 
 
 
 
+if __name__=="__main__":
+  main()
 
 
   
