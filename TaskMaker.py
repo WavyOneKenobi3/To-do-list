@@ -1,9 +1,9 @@
 
 class TaskMaker:
-  def _init__(self, duty, priorities = "Low", due_date = None, completion_status = False)
-    self.duty = duty
+  def __init__(self, duty, priorities = "Low", due_date = None, completion_status = False)
+    self.duty = duty 
     self.priorities = priorities 
-    self.due_date = due.date
+    self.due_date = due_date
     self.completion_status = completion_status
 
 
@@ -12,5 +12,6 @@ class TaskMaker:
 
   def status(self):
     self.completion_status = True
+    return self.completion_status
     
     
