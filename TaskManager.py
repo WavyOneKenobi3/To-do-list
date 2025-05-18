@@ -13,7 +13,7 @@ class TaskManager:
       priorities = input(f'How important is this task? Low, Medium or High ')
       due_date = input(f'Whats the due date for this task? mm/yyyy ')
 
-      new_task = TaskMaker(duty, priorities, due_date)
+      new_task = TaskMaker(duty, priorities, due_date, completion_status)
       self.to_do_list.append(new_task)
 
       print(f'Task added: {duty} with {priorities} priorities and due on {due_date}.')
